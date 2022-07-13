@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Lab2(3)</title>
+
+    <style type="text/css">
+
+        h1, form{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        label{
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+        }
+
+        textarea{
+            overflow-y: scroll;
+            resize: none;
+        }
+
+        label{
+            display: inline-block;
+            width: 130px;
+            text-align: left;
+        }
+
+        .formTextarea *{
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1><center>Your Personal Details</center></h1>
+
+    <form action="/action_page.php" id="formPersonal">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="fname" value="">
+        <br><br>
+
+        <label for="matric">Matric Number:</label>
+        <input type="text" id="matric" name="matnum" value="">
+        <br><br>
+
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" value="">
+
+        <p class="formTextarea">
+            <label for="address">Home Address:</label>
+            <textarea rows="4" cols="30" name="address"></textarea>
+        </p>
+
+        <label for="faculty">Faculty:</label>
+        <select id="faculty" name="fac">
+            <option value="coe">College of Engineering</option>
+            <option value="fkom" selected>FKOM</option>
+            <option value="fsti">FSTI</option>
+            <option value="psm">PSM</option>
+            <option value="fpi">FPI</option>
+            <option value="ftka">FTKA</option>
+            <option value="ftkee">FTKEE</option>
+            <option value="ftkkp">FTKKP</option>
+            <option value="ftkpm">FTKPM</option>
+            <option value="ftkma">FTKMA</option>
+        </select>
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <br><br>
+
+        <label for="hobby">Hobbies:</label>
+        <input type="checkbox" name="hobby" value="reading">Reading
+        <input type="checkbox" name="hobby" value="outdoor">Outdoor Activities
+        <input type="checkbox" name="hobby" value="watching">Watching TV
+        <input type="checkbox" name="hobby" value="sleeping">Sleeping
+
+        <p class="formTextarea">
+            <label for="comment">Insert Comment:</label>
+            <textarea rows="4" cols="30" name="comment"></textarea>
+        </p>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+
+</html>

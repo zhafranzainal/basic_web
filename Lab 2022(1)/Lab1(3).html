@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Lab1(3)</title>
+
+    <style type="text/css">
+        h1, form, label {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        textarea {
+            resize: both;
+        }
+
+        label {
+            display: inline-block;
+            width: 130px;
+            text-align: left;
+        }
+
+        .formTextarea * {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>
+        <center>Your Personal Details</center>
+    </h1>
+
+    <form style=" width: 50vw; margin-left : 31vw;" action="/action_page.php" id="formPersonal">
+
+        <label for="name" style="font-weight: bold;">Name:</label>
+        <input style='width:37em' type="text" id="name" name="fname" value="">
+        <br><br>
+
+        <label for="matric" style="font-weight: bold;">Student number:</label>
+        <input style='width:37em' type="text" id="matric" name="matnum" value="">
+        <br><br>
+
+        <label for="program" style="font-weight: bold;">Program:</label>
+        <select id="program" name="course">
+            <option value="dcs">Diploma in Computer Science</option>
+            <option value="bcs" selected>Bachelor of Computer Science (Software Engineering) with Honours</option>
+            <option value="bcn">Bachelor of Computer Science (Computer Systems & Networking) with Honours</option>
+            <option value="bcg">Bachelor of Computer Science (Graphics & Multimedia Technology) with Honours</option>
+            <option value="pcs">Research programmes (PHD and Master)</option>
+            <option value="mcs">Coursework programmes (Master)</option>
+        </select>
+        <br><br>
+
+        <label for="gender" style="font-weight: bold;">Gender:</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <br><br>
+
+        <label for="hobby" style="font-weight: bold;">Hobbies:</label>
+        <input type="checkbox" name="hobby" value="reading">Reading
+        <input type="checkbox" name="hobby" value="outdoor">Outdoor Activities
+        <input type="checkbox" name="hobby" value="watching">Watching TV
+        <input type="checkbox" name="hobby" value="sleeping">Sleeping
+
+        <p class="formTextarea">
+            <label for="comment" style="font-weight: bold;">Comment:</label>
+            <textarea name="comment"></textarea>
+        </p>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Lab2(1)</title>
+
+    <style>
+        h1,
+        h2,
+        p,
+        ul,
+        center {
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+        }
+
+        .fk_image {
+            background: url("images/FK.jpg") no-repeat;
+            background-size: cover;
+            background-position: center 76%;
+            position: relative;
+            color: white;
+            padding: 10px;
+        }
+
+        .fk_image::before {
+            content: '';
+            position: absolute;
+            background-color: black;
+            opacity: 0.4;
+            width: 100%;
+            height: 100%;
+        }
+
+        .fk_index {
+            background-color: aquamarine;
+            padding: 10px;
+        }
+
+        .topnav {
+            overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            color: black;
+            padding: 14px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            color: aquamarine;
+        }
+
+        td {
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+            padding-right: 80px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a href="#home">HOME</a>
+        <a href="#news">NEWS</a>
+        <a href="#contact">CONTACT</a>
+        <a href="#about">ABOUT</a>
+    </div>
+
+    <div class="fk_image">
+
+        <h1>Welcome to the Faculty of Computing</h1>
+        <hr>
+
+        <h2>Overview</h2>
+        <p>
+            <b>Faculty of Computing</b> which is formerly known as Faculty of Computer Systems & Software Engineering
+            was established on 16th of February 2002 to produce knowledgeable, high skilled and competitive graduates
+            within the area of software engineering, system and computer network. At the beginning, the faculty had two
+            fields which are Software Engineering and Networking. The faculty has also embarked on research and
+            development activities in the area such as information systems, software engineering, computer systems,
+            communication systems, graphic and multimedia technology, and cyber security to produce technologies that
+            are relevant to the needs of industries.
+        </p>
+
+        <h2>Facts and Figures</h2>
+
+        <table>
+
+            <tr style="font-size: 30px; font-weight: bold;">
+                <td>1800</td>
+                <td>6</td>
+            </tr>
+
+            <tr>
+                <td>students</td>
+                <td>programs</td>
+            </tr>
+
+        </table>
+
+        <hr>
+
+    </div>
+
+    <div class="fk_index">
+
+        <h2>Our Programs</h2>
+
+        <ul>
+            <li>Undergraduate programs</li>
+
+            <ul>
+
+                <li>
+                    <a href="https://fk.ump.edu.my/index.php/en/academic/undergraduate/ug-program?view=article&id=140:dcs&catid=34:undergraduate"
+                        target="_blank">Diploma in Computer Science
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://fk.ump.edu.my/index.php/en/academic/undergraduate/ug-program?view=article&id=141:bcs&catid=34:undergraduate"
+                        target="_blank">Bachelor of Computer Science (Software Engineering) with Honours
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://fk.ump.edu.my/index.php/en/academic/undergraduate/ug-program?view=article&id=142:bcn&catid=34:undergraduate"
+                        target="_blank">Bachelor of Computer Science (Computer Systems & Networking) with Honours
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://fk.ump.edu.my/index.php/en/academic/undergraduate/ug-program?view=article&id=143:bcg&catid=34:undergraduate"
+                        target="_blank">Bachelor of Computer Science (Graphics & Multimedia Technology) with Honours
+                    </a>
+                </li>
+
+            </ul>
+
+        </ul>
+
+        <ul>
+            <li>Postgraduate programs</li>
+
+            <ul>
+
+                <li>
+                    <a href="https://fk.ump.edu.my/index.php/en/academic/students-info/pg-program?view=article&id=151:phd-msc&catid=35:postgraduate"
+                        target="_blank">Research programmes (PHD and Master)
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://fk.ump.edu.my/index.php/en/academic/students-info/pg-program"
+                        target="_blank">Coursework programmes (Master)
+                    </a>
+                </li>
+
+            </ul>
+
+        </ul>
+
+    </div>
+
+</body>
+
+<footer>
+
+    <hr>
+    <p>
+        <center>&copy 2022 FK. All rights reserved.</center>
+    </p>
+
+</footer>
+
+</html>

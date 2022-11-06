@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+        function display(btn) {
+            var number1 = document.myForm.number1.value;
+            var number2 = document.myForm.number2.value;
+
+            var operator = btn.value;
+
+            if (operator == '+') {
+                result = +number1 + +number2;
+            }
+            else if (operator == '-') {
+                result = number1 - number2;
+            }
+            else if (operator == '*') {
+                result = number1 * number2;
+            }
+            else {
+                result = number1 / number2;
+            }
+
+            document.getElementById("demo").innerHTML = (
+                "<hr><br> Total: " + result
+            );
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <form name="myForm">
+        <label>Number 1: </label><input type="number" name="number1"><br>
+        <label>Number 2: </label><input type="number" name="number2"><br><br>
+
+        <input type="button" value="+" onclick="display(this)">
+        <input type="button" value="-" onclick="display(this)">
+        <input type="button" value="*" onclick="display(this)">
+        <input type="button" value="/" onclick="display(this)">
+    </form>
+
+    <p id="demo"></p>
+
+</body>

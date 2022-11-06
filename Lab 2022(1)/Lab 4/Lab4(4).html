@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+        function display() {
+            var username = document.myForm.username.value;
+            var age = document.myForm.age.value;
+
+            var currentTime = new Date();
+            var year = currentTime.getFullYear();
+
+            var birthYear = year - age;
+
+            document.getElementById("demo").innerHTML = (
+                "Welcome " + username +
+                "<br> You are born in " + birthYear
+            );
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <form name="myForm">
+        <label>Name: </label><input type="text" name="username">
+        <label>Age: </label><input type="number" name="age">
+
+        <input type="button" value="Submit" onclick="display()">
+    </form>
+
+    <p id="demo"></p>
+
+</body>
+
+</html>

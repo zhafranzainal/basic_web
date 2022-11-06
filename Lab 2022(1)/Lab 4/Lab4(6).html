@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+        var index = 0;
+        var numbers = Array();
+
+        function add() {
+            numbers[index] = document.getElementById("element").value;
+            alert("Element " + numbers[index] + " has been added at index " + index);
+            index++;
+        }
+
+        function display() {
+
+            var result = "<hr>";
+
+            for (var loop = 0; loop < numbers.length; loop++) {
+                result += "Element " + loop + " = " + numbers[loop] + "<br>";
+            }
+
+            document.getElementById("demo").innerHTML = (
+                result
+            );
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <input type="number" id="element">
+
+    <input type="button" value="Add" onclick="add()">
+    <input type="button" value="Display" onclick="display()">
+
+    <p id="demo"></p>
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        td>input {
+            width: 40px;
+        }
+    </style>
+
+    <script>
+
+        function display() {
+            var homeworkWeight = parseFloat(document.querySelector("#mark").children[0].children[1].children[1].innerText) / 100;
+            var homeworkMark = document.getElementById("homework").value;
+            var homework = homeworkWeight * homeworkMark;
+
+            var labWeight = parseFloat(document.querySelector("#mark").children[0].children[2].children[1].innerText) / 100;
+            var labMark = document.getElementById("lab").value;
+            var lab = labWeight * labMark;
+
+            var midtermWeight = parseFloat(document.querySelector("#mark").children[0].children[3].children[1].innerText) / 100;
+            var midtermMark = document.getElementById("midterm").value;
+            var midterm = midtermWeight * midtermMark;
+
+            var finalWeight = parseFloat(document.querySelector("#mark").children[0].children[4].children[1].innerText) / 100;
+            var finalMark = document.getElementById("final").value;
+            var final = finalWeight * finalMark;
+
+            var result = homework + lab + midterm + final;
+
+            if (result < 50) {
+                grade = 'F';
+            }
+            else if (result < 60) {
+                grade = 'D';
+            }
+            else if (result < 70) {
+                grade = 'C';
+            }
+            else if (result < 80) {
+                grade = 'B';
+            }
+            else {
+                grade = 'A';
+            }
+
+            document.getElementById("demo").innerHTML = (
+                "<hr> Your total mark is " + result +
+                "<br> Your grade is " + grade
+            );
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h1>Grades</h1>
+    <h2>Enter your marks for each section</h2>
+
+    <table id="mark">
+
+        <tr>
+            <td>Type</td>
+            <td>Weight</td>
+            <td>Marks</td>
+        </tr>
+
+        <tr>
+            <td>Homework</td>
+            <td>25%</td>
+            <td><input type="number" id="homework"></td>
+        </tr>
+
+        <tr>
+            <td>Labs</td>
+            <td>20%</td>
+            <td><input type="number" id="lab"></td>
+        </tr>
+
+        <tr>
+            <td>Midterm</td>
+            <td>25%</td>
+            <td><input type="number" id="midterm"></td>
+        </tr>
+
+        <tr>
+            <td>Final Exam</td>
+            <td>30%</td>
+            <td><input type="number" id="final"></td>
+        </tr>
+
+    </table>
+
+    <br><br>
+
+    <input type="button" value="Calculate Grade" onclick="display()">
+
+    <p id="demo"></p>
+
+</body>
+
+</html>

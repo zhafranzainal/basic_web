@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+        function display() {
+            var matricId = document.myForm.matricId.value;
+
+            document.getElementById("demo").innerHTML = (
+                "Your ID starts with <b>" + matricId.slice(0, 2)
+            );
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <form name="myForm">
+        <label>ID: </label><input type="text" name="matricId">
+
+        <input type="button" value="Click" onclick="display()">
+    </form>
+
+    <p id="demo"></p>
+
+</body>
+
+</html>

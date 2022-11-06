@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+        function display() {
+            var name = document.myForm.name.value;
+            var age = document.myForm.age.value;
+            var email = document.myForm.email.value;
+
+            document.getElementById("demo").innerHTML = (
+                "<hr><br> Welcome " + name +
+                "<br> You are " + age + "  years old" +
+                "<br> Your email address is " + email
+            );
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <form name="myForm">
+        <label>Name: </label><input type="text" name="name">
+        <label>Age: </label><input type="number" name="age">
+        <label>Email Address: </label><input type="email" name="email">
+
+        <input type="button" value="Submit" onclick="display()">
+    </form>
+
+    <p id="demo"></p>
+
+</body>
+
+</html>

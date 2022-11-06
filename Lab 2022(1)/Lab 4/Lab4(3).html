@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+        function display() {
+            var number1 = document.myForm.number1.value;
+            var number2 = document.myForm.number2.value;
+            var total = +number1 + +number2;
+
+            document.getElementById("demo").innerHTML = (
+                "Total: " + total
+            );
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <form name="myForm">
+        <label>Number 1: </label><input type="number" name="number1">
+        <label>Number 2: </label><input type="number" name="number2">
+
+        <input type="button" value="Submit" onclick="display()">
+    </form>
+
+    <p id="demo"></p>
+
+</body>
+
+</html>

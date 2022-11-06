@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Lab3(5)</title>
+</head>
+
+<body>
+
+    <script>
+        username = prompt("Enter your username");
+        email = prompt("Enter your email");
+
+        //HTML output
+        document.write(
+            "Username: " + username +
+            "<br> Email: " + email
+        );
+    </script>
+
+    <p id="demo"></p>
+
+    <script>
+        num1 = prompt("Enter number 1");
+        num2 = prompt("Enter number 2");
+        num3 = prompt("Enter number 3");
+        var sum = +num1 + +num2 + +num3;
+
+        document.getElementById("demo").innerHTML = (
+            "Number 1: " + num1 +
+            "<br> Number 2: " + num2 +
+            "<br> Number 3: " + num3 +
+            "<br><br> Summation: " + sum
+        );
+    </script>
+
+</body>
+
+</html>

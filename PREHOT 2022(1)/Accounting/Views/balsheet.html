@@ -1,0 +1,161 @@
+<!--
+    BCS2243 WEB ENGINEERING [HOT]
+    Student ID: CB20033
+    Student Name: AHMAD ZHAFRAN FARUQI BIN ZAINAL ABIDIN
+    Section: 02B
+    Lecturer name: DR. NOORLIN MOHD ALI
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learning Accountancy</title>
+    <link rel="stylesheet" href="../StyleSheets/mystyles.css">
+    <script src="../JavaScript/myfunctions.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h1>Learning Basic Accountancy</h1>
+        <p>An <b>education</b> website created for <b class="text1"><i>Teacher Lina's Students</i></b></p>
+
+    </div>
+
+    <div class="nav_top">
+
+        <a style="background-color: gray;" href="../index.html">Home</a>
+        <a href="#">Topics</a>
+        <a href="#">Exercises</a>
+
+        <div class="nav_top-right">
+            <a href="#">Download</a>
+        </div>
+
+    </div>
+
+    <nav>
+
+        <div style="margin: 10px;">
+            <br>
+
+            <h3>Teacher Lina</h3>
+            <img src="../Assets/myself.PNG" alt="myself">
+            <p>Currently I am working as a personal tutor for secondary school, teaching accounting principles.</p>
+            <h3>Focus</h3>
+            <p>Click on the link below for exercises on the selected topic</p>
+
+            <a href="../Views/balsheet.html"><button class="nav_side">Balance Sheet</button></a>
+            <br><br>
+
+            <a href="../Views/loans.html"><button class="nav_side">Loan & Interest</button></a>
+        </div>
+
+    </nav>
+
+    <section>
+        <br>
+
+        <h2>BALANCE SHEET</h2>
+
+        <form onsubmit="return false">
+
+            <table style="margin-left: auto; margin-right: auto;">
+
+                <tr>
+                    <td colspan="2">
+                        <h3>ASSETS</h3>
+                    </td>
+                    <td colspan="2">
+                        <h3>LIABILITY</h3>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" value="Land" readonly></td>
+                    <td><input type="number" id="textbox2" placeholder="0.00" min="0" step="0.01"></td>
+                    <td><input type="text" value="Interest payable" readonly></td>
+                    <td><input type="number" id="textbox4" placeholder="0.00" min="0" step="0.01"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" value="Cash" readonly></td>
+                    <td><input type="number" id="textbox6" placeholder="0.00" min="0" step="0.01"></td>
+                    <td><input type="text" value="Bills payable" readonly></td>
+                    <td><input type="number" id="textbox8" placeholder="0.00" min="0" step="0.01"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" value="Machinery" readonly></td>
+                    <td><input type="number" id="textbox10" placeholder="0.00" min="0" step="0.01"></td>
+                    <td><input type="text" value="Short-term loans" readonly></td>
+                    <td><input type="number" id="textbox12" placeholder="0.00" min="0" step="0.01"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" value="Investments" readonly></td>
+                    <td><input type="number" id="textbox14" placeholder="0.00" min="0" step="0.01"></td>
+                    <td colspan="2">
+                        <h3 style="display: inline;">EQUITY</h3>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" value="Office equipment" readonly></td>
+                    <td><input type="number" id="textbox16" placeholder="0.00" min="0" step="0.01"></td>
+                    <td><input type="text" value="Common Stock" readonly></td>
+                    <td><input type="number" id="textbox18" placeholder="0.00" min="0" step="0.01"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" value="Inventory" readonly></td>
+                    <td><input type="number" id="textbox20" placeholder="0.00" min="0" step="0.01"></td>
+                    <td><input type="text" value="Retained Earnings" readonly></td>
+                    <td><input type="number" id="textbox22" placeholder="0.00" min="0" step="0.01"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="number" id="textbox23" disabled></td>
+                    <td></td>
+                    <td><input type="number" id="textbox24" disabled></td>
+                </tr>
+
+            </table>
+            <br>
+
+            <div class="button_center">
+
+                <button class="button" onclick="checkBalance()">Check Balance</button>
+                <button class="button" type="reset">Reset</button>
+
+            </div>
+
+            <p id="demo"></p>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        <div class="nav_footer">
+
+            <a href="../index.html">Home &nbsp;&nbsp;|</a>
+            <a href="#">Privacy &nbsp;&nbsp;|</a>
+            <a href="#">Site Map &nbsp;&nbsp;|</a>
+            <a href="#">Links</a>
+
+            <div class="nav_top-right">
+                <a href="#">Copyright 2022; All Rights Reserved.</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

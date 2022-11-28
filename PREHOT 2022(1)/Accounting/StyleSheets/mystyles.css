@@ -1,0 +1,172 @@
+/*
+    BCS2243 WEB ENGINEERING [HOT]
+    Student ID: CB20033
+    Student Name: AHMAD ZHAFRAN FARUQI BIN ZAINAL ABIDIN
+    Section: 02B
+    Lecturer name: DR. NOORLIN MOHD ALI
+*/
+
+h1,
+h2,
+h3,
+p,
+a,
+table,
+th,
+td,
+label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    padding: 40px;
+    background-color: #7585C3;
+    text-align: center;
+    color: white;
+}
+
+.text1 {
+    font-family: Lucida Handwriting;
+    text-shadow: 2px 2px blue;
+    color: yellow;
+    font-size: 20px;
+}
+
+.nav_top {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav_top-right {
+    float: right;
+}
+
+/* Style the links inside the navigation bar */
+.nav_top a {
+    display: block;
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.nav_top a:hover {
+    color: black;
+    background-color: #ddd;
+}
+
+img {
+    width: 100%;
+}
+
+.nav_side {
+    border: none;
+    padding: 10px 140px;
+    background-color: #7585C3;
+    cursor: pointer;
+    color: white;
+}
+
+.nav_side:hover,
+.nav_side:active {
+    background-color: #3366CC;
+}
+
+.nav_footer {
+    background-color: #333;
+    height: 50px;
+}
+
+.nav_footer-right {
+    float: right;
+}
+
+/* Style the links inside the navigation footer */
+.nav_footer a {
+    float: left;
+    padding: 14px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    float: left;
+    width: 30%;
+    height: 1400px;
+    background: #E0E0E0;
+}
+
+section {
+    margin-left: 31%;
+    width: 67%;
+    position: absolute;
+}
+
+footer {
+    padding: 10px;
+    margin-top: 1400px;
+    min-height: 49px;
+    background-color: silver;
+}
+
+.button_center {
+    padding: 10px 325px;
+}
+
+.button {
+    height: 40px;
+    width: 130px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.button:hover {
+    border: none;
+}
+
+.error {
+    color: red;
+}
+
+input,
+select {
+    height: 35px;
+    width: 240px;
+    border-radius: 4px;
+    border-color: #E0E0E0;
+}
+
+td[colspan="2"] {
+    background-color: #E5FBF0;
+    padding: 1px 10px;
+}
+
+input[disabled] {
+    background-color: #E5FBF0;
+}
+
+input[type="number"] {
+    text-align: right;
+}
+
+fieldset#formInput {
+    width: 100%;
+    background-color: #E5E6E6;
+    border: none;
+}
+
+fieldset#formOutput {
+    width: 100%;
+    background-color: #E5FBF0;
+    border: none;
+}
+
+label {
+    display: inline-block;
+    width: 320px;
+    text-align: left;
+}

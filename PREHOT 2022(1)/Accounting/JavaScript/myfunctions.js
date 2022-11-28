@@ -43,13 +43,17 @@ function checkInstallment() {
     var purpose = document.getElementById("purpose").value;
     var price = document.getElementById("price").value;
     var term = document.getElementById("term").value;
-    var rate = document.getElementById("rate").value;
+
+    var ratePercent = document.getElementById("rate").value;
+    var rate = +ratePercent / 100 / 12;
+
     var payment = document.getElementById("payment").value;
 
     document.getElementById("loanAmount").value = +price - +payment;
     var loanAmount = document.getElementById("loanAmount").value;
 
-    var paymentMonthly = 2 * +rate * (+term * 12);
+    var paymentMonthly = (+loanAmount * rate) / (1 - Math.pow(1 + rate, -(+term * 12)));
+
     var paymentTotal = paymentMonthly * (+term * 12);
     var interestTotal = paymentTotal - +loanAmount;
 

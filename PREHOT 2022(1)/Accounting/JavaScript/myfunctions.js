@@ -45,7 +45,7 @@ function checkInstallment() {
     var term = document.getElementById("term").value;
 
     var ratePercent = document.getElementById("rate").value;
-    var rate = +ratePercent / 100 / 12;
+    var rate = (+ratePercent / 100) / 12;
 
     var payment = document.getElementById("payment").value;
 
@@ -53,7 +53,6 @@ function checkInstallment() {
     var loanAmount = document.getElementById("loanAmount").value;
 
     var paymentMonthly = (+loanAmount * rate) / (1 - Math.pow(1 + rate, -(+term * 12)));
-
     var paymentTotal = paymentMonthly * (+term * 12);
     var interestTotal = paymentTotal - +loanAmount;
 

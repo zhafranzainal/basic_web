@@ -1,0 +1,187 @@
+<!--
+    BCS2243 WEB ENGINEERING [HOT]
+    Student ID: CB20033
+    Student Name: AHMAD ZHAFRAN FARUQI BIN ZAINAL ABIDIN
+    Section: 02B
+    Lecturer name: DR. NOORLIN MOHD ALI
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gold Recommendation</title>
+    <link rel="stylesheet" href="styles/goldrec.css">
+
+    <script>
+
+        function addComma(price) {
+
+            // Remove commas
+            x = price ? parseFloat(price.replace(/,/g, '')) : 0;
+
+            // Apply formatting
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+        }
+
+        function checkBalance() {
+
+            var price_1g = document.getElementById("gram1").value;
+            var price_5g = document.getElementById("gram5").value;
+            var price_10g = document.getElementById("gram10").value;
+            var price_20g = document.getElementById("gram20").value;
+            var cap_val = document.getElementById("capital").value;
+
+            document.getElementById("capitalOutput").value = cap_val.toFixed(2);
+
+            if (cap_val <= 0) {
+                return;
+            }
+
+            else if (cap_val >= price_20g) {
+                cap_val -= price_20g;
+
+                return cap_val;
+            }
+
+            else if (cap_val >= price_10g) {
+                cap_val -= price_10g;
+
+                return cap_val;
+            }
+
+            else if (cap_val >= price_5g) {
+                cap_val -= price_5g;
+
+                return cap_val;
+            }
+
+            else if (cap_val >= price_1g) {
+                cap_val -= price_1g;
+
+                return cap_val;
+            }
+
+            else {
+                return;
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h2>GOLD RECOMMENDATION</h2>
+        <p>GOLD BAR (GB) 999.9</p>
+
+        <div class="datetime">
+            <p>PRICE ON TODAY</p>
+            <p id="header_date"></p>
+        </div>
+
+        <script>
+
+            const days = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"];
+
+            var currentDate = new Date();
+            var datetime =
+                currentDate.getFullYear() + "-" +
+                (currentDate.getMonth() + 1) + "-" +
+                currentDate.getDate() + " " +
+                currentDate.getHours() + ":" +
+                currentDate.getMinutes() + ":" +
+                currentDate.getSeconds() +
+                "<br>DAY :- " + days[currentDate.getDay()];
+
+            document.getElementById("header_date").innerHTML = datetime;
+
+        </script>
+    </div>
+
+    <section>
+
+        <form onsubmit="return false">
+            <br>
+
+            <table>
+
+                <tr class="table_header1">
+                    <th>GOLD BAR (GB) WEIGHT (GRAM)</th>
+                    <th>PRICE (RINGGIT MALAYSIA)</th>
+                </tr>
+
+                <tr>
+                    <th>GB 999.99 (1gm)</th>
+                    <td><input type="text" id="gram1" placeholder="Price in RM"
+                            onkeyup="this.value=addComma(this.value);"></td>
+                </tr>
+
+                <tr>
+                    <th>GB 999.99 (5gm)</th>
+                    <td><input type="text" id="gram5" placeholder="Price in RM"
+                            onkeyup="this.value=addComma(this.value);"></td>
+                </tr>
+
+                <tr>
+                    <th>GB 999.99 (10gm)</th>
+                    <td><input type="text" id="gram10" placeholder="Price in RM"
+                            onkeyup="this.value=addComma(this.value);"></td>
+                </tr>
+
+                <tr>
+                    <th>GB 999.99 (20gm)</th>
+                    <td><input type="text" id="gram20" placeholder="Price in RM"
+                            onkeyup="this.value=addComma(this.value);"></td>
+                </tr>
+
+                <tr class="table_header2">
+                    <th></th>
+                    <th></th>
+                </tr>
+
+                <tr>
+                    <th>Amount of Capital</th>
+                    <td><input type="text" id="capital" placeholder="Amount of RM"
+                            onkeyup="this.value=addComma(this.value);"></td>
+                </tr>
+
+            </table>
+
+            <div class="button_center">
+
+                <button class="button"
+                    onclick="location.href = 'views/recommend.html'; checkBalance()"><b>Recommend</b></button>
+                <button class="button" type="reset"><b>Reset</b></button>
+
+            </div>
+            <br>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        <div class="nav_footer">
+
+            <a href="index.html">Home &nbsp;&nbsp;|</a>
+            <a href="#">Privacy &nbsp;&nbsp;|</a>
+            <a href="#">Site Map &nbsp;&nbsp;|</a>
+            <a href="#">Links</a>
+
+            <div class="nav_footer-right">
+                <a href="#">Copyright 2022; All Rights Reserved.</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

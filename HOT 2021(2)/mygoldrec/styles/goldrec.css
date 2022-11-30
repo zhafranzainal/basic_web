@@ -1,0 +1,118 @@
+/*
+    BCS2243 WEB ENGINEERING [HOT]
+    Student ID: CB20033
+    Student Name: AHMAD ZHAFRAN FARUQI BIN ZAINAL ABIDIN
+    Section: 02B
+    Lecturer name: DR. NOORLIN MOHD ALI
+*/
+
+h2 {
+    font-family: 'Lucida Handwriting';
+}
+
+p {
+    font-family: 'Lucida Console';
+    font-weight: bold;
+}
+
+.header {
+    padding: 10px;
+    padding-bottom: 40px;
+    background-color: #FFF77A;
+    text-align: center;
+}
+
+.datetime {
+    background-color: #7E5109;
+    color: white;
+    width: 99%;
+    display: inline-block;
+}
+
+.datetime>p {
+    margin: 0px;
+    padding: 0px;
+    color: #e5fbf0;
+    font-family: 'Lucida Console';
+    font-weight: bold;
+}
+
+th,
+td {
+    border: 1px solid #D4AC0D;
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.nav_footer-right {
+    float: right;
+}
+
+/* Style the links inside the navigation footer */
+.nav_footer a {
+    float: left;
+    padding: 14px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    min-height: 45px;
+    background-color: #7E5109;
+}
+
+.button_center {
+    text-align: center;
+}
+
+.button {
+    padding: 13px 19px;
+    background-color: #D4AC0D;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+.button:hover {
+    background-color: #f57c3f;
+}
+
+input {
+    width: 240px;
+    text-align: right;
+}
+
+section {
+    background: url("../assets/background.jpg") no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 1px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e5fbf0;
+    border-spacing: 5px;
+}
+
+.table_header1 {
+    background: #fed33d;
+}
+
+.table_header1>th {
+    padding: 5px 60px;
+}
+
+.table_header2 {
+    background: pink;
+}
+
+.table_header2>th {
+    padding: 5px 181px;
+}

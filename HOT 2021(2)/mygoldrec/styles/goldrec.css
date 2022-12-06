@@ -44,6 +44,10 @@ td {
     padding: 10px;
 }
 
+td[colspan="2"] {
+    border: none;
+}
+
 img {
     width: 100%;
 }

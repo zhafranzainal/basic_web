@@ -12,20 +12,7 @@
 <head>
     <title>Gold Recommendation</title>
     <link rel="stylesheet" href="../styles/goldrec.css">
-
-    <script>
-
-        function addComma(price) {
-
-            // Remove commas
-            x = price ? parseFloat(price.replace(/,/g, '')) : 0;
-
-            // Apply formatting
-            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
-        }
-
-    </script>
+    <script src="../functions/goldrec.js"></script>
 </head>
 
 <body>
@@ -39,23 +26,6 @@
             <p>SUGGESTED GOLD BAR TO PURCHASE</p>
         </div>
 
-        <script>
-
-            const days = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"];
-
-            var currentDate = new Date();
-            var datetime =
-                currentDate.getFullYear() + "-" +
-                (currentDate.getMonth() + 1) + "-" +
-                currentDate.getDate() + " " +
-                currentDate.getHours() + ":" +
-                currentDate.getMinutes() + ":" +
-                currentDate.getSeconds() +
-                "<br>DAY :- " + days[currentDate.getDay()];
-
-            document.getElementById("header_date").innerHTML = datetime;
-
-        </script>
     </div>
 
     <section>

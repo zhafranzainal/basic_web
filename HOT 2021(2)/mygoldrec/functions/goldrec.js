@@ -18,6 +18,30 @@ var datetime =
 
 document.getElementById("header_date").innerHTML = datetime;
 
+function addThousandSeparator(id) {
+
+    // Get the input element
+    var input = document.getElementById(id);
+
+    // Remove any non-numeric characters from the input
+    inputCleaned = input.value.replace(/[^0-9.]/g, "");
+
+    // Split the input value into the integer and decimal parts
+    var parts = inputCleaned.split(".");
+
+    // Add the thousand separator to the integer part
+    var integerPart = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+    // If there is a decimal part, add it back to the integer part
+    if (parts.length > 1) {
+        integerPart += "." + parts[1];
+    }
+
+    // Set the value of the input to the formatted value
+    input.value = integerPart;
+
+}
+
 function checkBalance() {
 
     // Get the URL of the current page
@@ -28,17 +52,26 @@ function checkBalance() {
 
     // Use the get() method of the URLSearchParams interface to retrieve the input value
     var price_1g = params.get('gram1');
-    var price_5g = params.get('gram5');
-    var price_10g = params.get('gram10');
-    var price_20g = params.get('gram20');
-    var cap_val = parseFloat(params.get('capital'));
+    price_1g = parseFloat(price_1g.replace(/\,/g, ''));
 
-    document.getElementById("capitalOutput").value = cap_val.toFixed(2);
+    var price_5g = params.get('gram5');
+    price_5g = parseFloat(price_5g.replace(/\,/g, ''));
+
+    var price_10g = params.get('gram10');
+    price_10g = parseFloat(price_10g.replace(/\,/g, ''));
+
+    var price_20g = params.get('gram20');
+    price_20g = parseFloat(price_20g.replace(/\,/g, ''));
+
+    var capital = params.get('capital');
+    var cap_val = parseFloat(capital.replace(/\,/g, ''));
+
+    document.getElementById("capitalOutput").value = capital;
     document.getElementById("quantity1").value = 0;
     document.getElementById("quantity5").value = 0;
     document.getElementById("quantity10").value = 0;
     document.getElementById("quantity20").value = 0;
-    document.getElementById("balance").value = cap_val.toFixed(2);
+    document.getElementById("balance").value = capital;
 
     if (cap_val <= 0) {
         return;

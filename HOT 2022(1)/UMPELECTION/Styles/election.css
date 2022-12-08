@@ -1,0 +1,182 @@
+/*
+    BCS2243 WEB ENGINEERING [HOT]
+    Student ID: CB20033
+    Student Name: AHMAD ZHAFRAN FARUQI BIN ZAINAL ABIDIN
+    Section: 02B
+    Lecturer name: DR. NOORLIN MOHD ALI
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  border: 1px solid black;
+}
+
+.bannerimg {
+  content: none;
+  background: url("../Assets/banner.png") no-repeat;
+  background-size: cover;
+  padding: 160px;
+}
+
+.candidateimg {
+  width: 5%;
+  height: 100px;
+}
+
+.navbar_mid {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.navbar_mid a {
+  display: block;
+  float: left;
+  color: black;
+  font-weight: bold;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar_mid a:hover {
+  background-color: #4CAF50;
+}
+
+.active {
+  background-color: #ddd;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row_title {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  color: black;
+  text-align: center;
+}
+
+.row_right {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+.main {
+  flex: 70%;
+  padding: 20px;
+}
+
+.select_voting1 {
+  background-color: #66CDAA;
+  color: white;
+  border-radius: 5px;
+}
+
+.select_voting2 {
+  background-color: #66CDAA;
+  color: white;
+  border-radius: 5px;
+  width: 85%;
+}
+
+.col-row-title2 {
+  float: left;
+  margin-top: 1px;
+  padding: 1px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: #66CDAA;
+}
+
+.container1 {
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #d5af18;
+  padding: 10px;
+}
+
+.column1 {
+  float: left;
+  margin-top: 1px;
+  padding: 1px;
+  border: 2px solid #ffa500;
+  border-radius: 5px;
+  width: 15%;
+}
+
+.column2 {
+  float: right;
+  margin-top: 1px;
+  padding: 5px;
+  border: 1px solid #d5af18;
+  border-radius: 4px;
+}
+
+.col-calc {
+  padding: 20px;
+  width: 60%;
+  margin-top: 6px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+footer {
+  padding: 1px;
+  text-align: center;
+  background: #66CDAA;
+}
+
+label {
+  padding: 12px;
+  display: inline-block;
+}
+
+select,
+input[type=text] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #060606;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type=submit],
+input[type=reset] {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #4CAF50;
+  cursor: pointer;
+  float: right;
+  margin-right: 40px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}

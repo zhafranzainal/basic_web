@@ -1,0 +1,203 @@
+<!--
+    BCS2243 WEB ENGINEERING [HOT]
+    Student ID: CB20033
+    Student Name: AHMAD ZHAFRAN FARUQI BIN ZAINAL ABIDIN
+    Section: 02B
+    Lecturer name: DR. NOORLIN MOHD ALI
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>UMP Campus Election</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Zhafran">
+	<meta name="description" content="Answer HOT Semester I 2022/2023">
+	<link rel="stylesheet" type="text/css" href="Styles/election.css">
+	<script src="Functions/election.js"></script>
+</head>
+
+<body>
+
+	<div class="header">
+		<div class="bannerimg"></div>
+	</div>
+
+	<div class="navbar_mid">
+		<a href="index.html" class="active">HOME</a>
+		<a href="Views/candidate_zhafran.html">CANDIDATE</a>
+	</div>
+
+	<div class="row">
+
+		<div class="main">
+
+			<h2>VOTING RESULT</h2>
+
+			<p>Voting result for UMP Campus Election 2022</p>
+			<br>
+
+			<form onsubmit="return false">
+
+				<div class="row_title">
+
+					<div class="select_voting1">
+						<label style="padding: 15px 50px 12px 50px;">Select voting center:</label>
+					</div>
+
+					<div class="select_voting2">
+						<div class="col-row-title2">
+							<select id="faculty" name="faculty" required>
+								<option value="" disabled selected>Select voting center</option>
+								<option value="coe">College of Engineering</option>
+								<option value="fkom">Faculty of Computing</option>
+								<option value="fsti">Faculty of Industrial Sciences and Technology</option>
+								<option value="psm">Centre for Mathematical Sciences</option>
+								<option value="fpi">Faculty of Industrial Management</option>
+								<option value="ftka">Faculty of Civil Engineering Technology</option>
+								<option value="ftkee">Faculty of Electrical and Electronics Engineering Technology
+								</option>
+								<option value="ftkkp">Faculty of Chemical and Process Engineering Technology</option>
+								<option value="ftkpm">Faculty of Manufacturing and Mechatronic Engineering Technology
+								</option>
+								<option value="ftkma">Faculty of Mechanical & Automotive Engineering Technology</option>
+							</select>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="container1">
+					<div class="row">
+						<div class="column1"><label>A. Ballots received details:</label></div>
+						<div class="column2">
+
+							<table>
+
+								<tr>
+									<th colspan="2">BALLOT NUMBER SERIES</th>
+									<th rowspan="2">NUMBER OF BALLOT RECEIVED</th>
+									<th rowspan="2">NUMBER OF BALLOT GIVEN TO VOTERS</th>
+								</tr>
+
+								<tr>
+									<th>Number from</th>
+									<th>Number to</th>
+								</tr>
+
+								<tr>
+									<td><input type="text" id="number_from1" required></td>
+									<td><input type="text" id="number_to1" required></td>
+									<td><input type="text" id="ballot_received1" readonly></td>
+									<td><input type="text" id="ballot_given1" required></td>
+								</tr>
+
+								<tr>
+									<td><input type="text" id="number_from2" required></td>
+									<td><input type="text" id="number_to2" required></td>
+									<td><input type="text" id="ballot_received2" readonly></td>
+									<td><input type="text" id="ballot_given2" required></td>
+								</tr>
+
+								<tr>
+									<td colspan="2" class="row_right">Total ballots</td>
+									<td><input type="text" id="ballot_received" readonly></td>
+									<td><input type="text" id="ballot_given" readonly></td>
+								</tr>
+
+							</table>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="container1">
+
+					<div class="row">
+						<div class="column1"><label>A. Total ballots in ballot box:</label></div>
+						<div class="column2"><input type="text" id="ballot_total" readonly></div>
+					</div>
+
+					<div class="row">
+						<div class="column1"><label>B. Total votes</label></div>
+						<div class="column2">
+
+							<table>
+
+								<tr>
+									<th>CANDIDATE NAME</th>
+									<th>PARTY NAME</th>
+									<th>NUMBER OF VOTES</th>
+								</tr>
+
+								<tr>
+									<td>
+										<a href="Views/candidate_hakimie.html" id="candidate_name1">NIK HAKIMIE BIN NIK MUSTAPA FADZI</a>
+									</td>
+									<td>
+										<select id="candidate1" name="candidate1" required>
+											<option value="" disabled selected>Select candidate party</option>
+											<option value="basikal">BASIKAL</option>
+											<option value="tetikus">TETIKUS</option>
+										</select>
+									</td>
+									<td><input type="text" id="vote1" required></td>
+								</tr>
+
+								<tr>
+									<td>
+										<a href="Views/candidate_zhafran.html" id="candidate_name2">AHMAD ZHAFRAN FARUQI BIN ZAINAL ABIDIN</a>
+									</td>
+									<td>
+										<select id="candidate2" name="candidate2" required>
+											<option value="" disabled selected>Select candidate party</option>
+											<option value="basikal">BASIKAL</option>
+											<option value="tetikus">TETIKUS</option>
+										</select>
+									</td>
+									<td><input type="text" id="vote2" required></td>
+								</tr>
+
+								<tr>
+									<td colspan="2" class="row_right">Total votes</td>
+									<td><input type="text" id="vote_total" readonly></td>
+								</tr>
+
+							</table>
+
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="column1"><label>C. Total rejected ballots:</label></div>
+						<div class="column2"><input type="text" id="ballot_rejected" readonly></div>
+					</div>
+
+					<div class="row">
+
+						<div class="col-calc">
+							<input type="reset" value="RESET">
+							<input type="submit" id="submit" value="PROCESS" onclick="calculateVote()">
+						</div>
+
+					</div>
+
+					<p id="demo"></p>
+
+			</form>
+
+		</div>
+
+		<p id="demo"></p>
+
+		<footer>
+			<h4>Copyright 2022; All Rights Reserved.</h4>
+		</footer>
+
+	</div>
+
+</body>
+
+</html>

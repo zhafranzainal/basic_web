@@ -47,3 +47,80 @@ function calculateVote() {
     }
 
 }
+
+function addPrefix() {
+
+    var faculty = document.getElementById("faculty").value;
+
+    var number_from1 = document.getElementById("number_from1");
+    var number_from2 = document.getElementById("number_from2");
+    var number_to1 = document.getElementById("number_to1");
+    var number_to2 = document.getElementById("number_to2");
+
+    number_from1.value = "";
+    number_from2.value = "";
+    number_to1.value = "";
+    number_to2.value = "";
+
+    if (faculty == "coe") {
+        number_from1.value = "CE" + number_from1.value;
+        number_from2.value = "CE" + number_from2.value;
+        number_to1.value = "CE" + number_to1.value;
+        number_to2.value = "CE" + number_to2.value;
+    }
+    else if (faculty == "fkom") {
+        number_from1.value = "FK" + number_from1.value;
+        number_from2.value = "FK" + number_from2.value;
+        number_to1.value = "FK" + number_to1.value;
+        number_to2.value = "FK" + number_to2.value;
+    }
+    else if (faculty == "fsti") {
+        number_from1.value = "FS" + number_from1.value;
+        number_from2.value = "FS" + number_from2.value;
+        number_to1.value = "FS" + number_to1.value;
+        number_to2.value = "FS" + number_to2.value;
+    }
+    else if (faculty == "psm") {
+        number_from1.value = "CM" + number_from1.value;
+        number_from2.value = "CM" + number_from2.value;
+        number_to1.value = "CM" + number_to1.value;
+        number_to2.value = "CM" + number_to2.value;
+    }
+    else if (faculty == "fpi") {
+        number_from1.value = "FM" + number_from1.value;
+        number_from2.value = "FM" + number_from2.value;
+        number_to1.value = "FM" + number_to1.value;
+        number_to2.value = "FM" + number_to2.value;
+    }
+    else if (faculty == "ftka") {
+        number_from1.value = "CT" + number_from1.value;
+        number_from2.value = "CT" + number_from2.value;
+        number_to1.value = "CT" + number_to1.value;
+        number_to2.value = "CT" + number_to2.value;
+    }
+    else if (faculty == "ftkee") {
+        number_from1.value = "ET" + number_from1.value;
+        number_from2.value = "ET" + number_from2.value;
+        number_to1.value = "ET" + number_to1.value;
+        number_to2.value = "ET" + number_to2.value;
+    }
+    else if (faculty == "ftkkp") {
+        number_from1.value = "PT" + number_from1.value;
+        number_from2.value = "PT" + number_from2.value;
+        number_to1.value = "PT" + number_to1.value;
+        number_to2.value = "PT" + number_to2.value;
+    }
+    else if (faculty == "ftkpm") {
+        number_from1.value = "MT" + number_from1.value;
+        number_from2.value = "MT" + number_from2.value;
+        number_to1.value = "MT" + number_to1.value;
+        number_to2.value = "MT" + number_to2.value;
+    }
+    else {
+        number_from1.value = "AT" + number_from1.value;
+        number_from2.value = "AT" + number_from2.value;
+        number_to1.value = "AT" + number_to1.value;
+        number_to2.value = "AT" + number_to2.value;
+    }
+
+}

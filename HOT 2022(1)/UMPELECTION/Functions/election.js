@@ -57,70 +57,86 @@ function addPrefix() {
     var number_to1 = document.getElementById("number_to1");
     var number_to2 = document.getElementById("number_to2");
 
-    number_from1.value = "";
-    number_from2.value = "";
-    number_to1.value = "";
-    number_to2.value = "";
-
     if (faculty == "coe") {
-        number_from1.value = "CE" + number_from1.value;
-        number_from2.value = "CE" + number_from2.value;
-        number_to1.value = "CE" + number_to1.value;
-        number_to2.value = "CE" + number_to2.value;
+        number_from1.value = "CE";
+        number_from2.value = "CE";
+        number_to1.value = "CE";
+        number_to2.value = "CE";
     }
     else if (faculty == "fkom") {
-        number_from1.value = "FK" + number_from1.value;
-        number_from2.value = "FK" + number_from2.value;
-        number_to1.value = "FK" + number_to1.value;
-        number_to2.value = "FK" + number_to2.value;
+        number_from1.value = "FK";
+        number_from2.value = "FK";
+        number_to1.value = "FK";
+        number_to2.value = "FK";
     }
     else if (faculty == "fsti") {
-        number_from1.value = "FS" + number_from1.value;
-        number_from2.value = "FS" + number_from2.value;
-        number_to1.value = "FS" + number_to1.value;
-        number_to2.value = "FS" + number_to2.value;
+        number_from1.value = "FS";
+        number_from2.value = "FS";
+        number_to1.value = "FS";
+        number_to2.value = "FS";
     }
     else if (faculty == "psm") {
-        number_from1.value = "CM" + number_from1.value;
-        number_from2.value = "CM" + number_from2.value;
-        number_to1.value = "CM" + number_to1.value;
-        number_to2.value = "CM" + number_to2.value;
+        number_from1.value = "CM";
+        number_from2.value = "CM";
+        number_to1.value = "CM";
+        number_to2.value = "CM";
     }
     else if (faculty == "fpi") {
-        number_from1.value = "FM" + number_from1.value;
-        number_from2.value = "FM" + number_from2.value;
-        number_to1.value = "FM" + number_to1.value;
-        number_to2.value = "FM" + number_to2.value;
+        number_from1.value = "FM";
+        number_from2.value = "FM";
+        number_to1.value = "FM";
+        number_to2.value = "FM";
     }
     else if (faculty == "ftka") {
-        number_from1.value = "CT" + number_from1.value;
-        number_from2.value = "CT" + number_from2.value;
-        number_to1.value = "CT" + number_to1.value;
-        number_to2.value = "CT" + number_to2.value;
+        number_from1.value = "CT";
+        number_from2.value = "CT";
+        number_to1.value = "CT";
+        number_to2.value = "CT";
     }
     else if (faculty == "ftkee") {
-        number_from1.value = "ET" + number_from1.value;
-        number_from2.value = "ET" + number_from2.value;
-        number_to1.value = "ET" + number_to1.value;
-        number_to2.value = "ET" + number_to2.value;
+        number_from1.value = "ET";
+        number_from2.value = "ET";
+        number_to1.value = "ET";
+        number_to2.value = "ET";
     }
     else if (faculty == "ftkkp") {
-        number_from1.value = "PT" + number_from1.value;
-        number_from2.value = "PT" + number_from2.value;
-        number_to1.value = "PT" + number_to1.value;
-        number_to2.value = "PT" + number_to2.value;
+        number_from1.value = "PT";
+        number_from2.value = "PT";
+        number_to1.value = "PT";
+        number_to2.value = "PT";
     }
     else if (faculty == "ftkpm") {
-        number_from1.value = "MT" + number_from1.value;
-        number_from2.value = "MT" + number_from2.value;
-        number_to1.value = "MT" + number_to1.value;
-        number_to2.value = "MT" + number_to2.value;
+        number_from1.value = "MT";
+        number_from2.value = "MT";
+        number_to1.value = "MT";
+        number_to2.value = "MT";
     }
     else {
-        number_from1.value = "AT" + number_from1.value;
-        number_from2.value = "AT" + number_from2.value;
-        number_to1.value = "AT" + number_to1.value;
-        number_to2.value = "AT" + number_to2.value;
+        number_from1.value = "AT";
+        number_from2.value = "AT";
+        number_to1.value = "AT";
+        number_to2.value = "AT";
+    }
+
+}
+
+function showVote() {
+
+    var candidate1 = document.getElementById("candidate1").value;
+    var candidate2 = document.getElementById("candidate2").value;
+
+    if (candidate1 == "basikal") {
+        document.getElementById("vote1").value = 300;
+    }
+    else {
+        document.getElementById("vote1").value = 390;
+    }
+
+    if (candidate2 == "basikal") {
+        document.getElementById("vote2").value = 300;
+    }
+    else {
+        document.getElementById("vote2").value = 390;
     }
 
 }

@@ -130,13 +130,13 @@
 										</a>
 									</td>
 									<td>
-										<select id="candidate1" name="candidate1" required>
+										<select id="candidate1" name="candidate1" required onchange="showVote()">
 											<option value="" disabled selected>Select candidate party</option>
 											<option value="basikal">BASIKAL</option>
 											<option value="tetikus">TETIKUS</option>
 										</select>
 									</td>
-									<td><input type="text" id="vote1" required></td>
+									<td><input type="text" id="vote1" readonly></td>
 								</tr>
 								<tr>
 									<td>
@@ -145,13 +145,13 @@
 										</a>
 									</td>
 									<td>
-										<select id="candidate2" name="candidate2" required>
+										<select id="candidate2" name="candidate2" required onchange="showVote()">
 											<option value="" disabled selected>Select candidate party</option>
 											<option value="basikal">BASIKAL</option>
 											<option value="tetikus">TETIKUS</option>
 										</select>
 									</td>
-									<td><input type="text" id="vote2" required></td>
+									<td><input type="text" id="vote2" readonly></td>
 								</tr>
 								<tr>
 									<td colspan="2" class="row_right">Total votes</td>

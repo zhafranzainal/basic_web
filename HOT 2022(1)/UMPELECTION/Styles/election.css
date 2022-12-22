@@ -61,7 +61,6 @@
 
 .row_title {
   display: flex;
-  -ms-flex-wrap: wrap;
   color: black;
   text-align: center;
 }

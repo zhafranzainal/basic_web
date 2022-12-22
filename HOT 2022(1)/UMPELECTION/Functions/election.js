@@ -12,9 +12,9 @@ function calculateVote() {
     var number_to2 = parseFloat(document.getElementById("number_to2").value.substring(3));
 
     document.getElementById("ballot_received1").value = number_to1 - number_from1 + 1;
-    var ballot_received1 = document.getElementById("ballot_received1").value;
+    var ballot_received1 = parseFloat(document.getElementById("ballot_received1").value);
     document.getElementById("ballot_received2").value = number_to2 - number_from2 + 1;
-    var ballot_received2 = document.getElementById("ballot_received2").value;
+    var ballot_received2 = parseFloat(document.getElementById("ballot_received2").value);
     document.getElementById("ballot_received").value = ballot_received1 + ballot_received2;
 
     var ballot_given1 = parseFloat(document.getElementById("ballot_given1").value);

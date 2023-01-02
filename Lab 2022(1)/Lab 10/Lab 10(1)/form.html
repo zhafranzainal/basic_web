@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Lab10(1)</title>
+
+    <style type="text/css">
+        label {
+            display: inline-block;
+            width: 130px;
+            text-align: left;
+        }
+
+        .formTextarea * {
+            vertical-align: middle;
+        }
+
+        textarea.textareaHobby {
+            resize: none;
+            overflow-y: scroll;
+            width: 95px;
+            height: 65px;
+        }
+
+        textarea.textareaComment {
+            resize: both;
+            height: 65px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form style="padding: 40px;" action="http://localhost/readForm.php" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="">
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" value="">
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <br><br>
+
+        <label for="title">Title:</label>
+        <input type="checkbox" name="title" value="Professor (Prof)">Prof
+        <input type="checkbox" name="title" value="Doctor (Dr)">Dr
+        <br><br>
+
+        <p class="formTextarea">
+            <label for="hobby">Hobbies:</label>
+            <textarea class="textareaHobby" name="hobby"></textarea>
+        </p>
+
+        <p class="formTextarea">
+            <label for="comment">Comment:</label>
+            <textarea class="textareaComment" name="comment"></textarea>
+        </p>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+
+</html>

@@ -36,6 +36,8 @@ echo "<h3>Congratulations, " . $_SESSION['SESS_FIRST_NAME'] . "" . $_SESSION['SE
         Blak blak blak important information.
     </p>
 
+    <br>
+
     <a href="logout.php">Logout Here</a>
 
 </body>

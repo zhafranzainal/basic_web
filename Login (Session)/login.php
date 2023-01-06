@@ -25,7 +25,7 @@ session_start();
         echo "<hl style='color:red'>Error found: ";
 
         for ($loop = 0; $loop < count($_SESSION['ERRMSG_ARR']); $loop++) {
-            echo $_SESSION['ERRMSG_ARR'][$loop] . "!";
+            echo $_SESSION['ERRMSG_ARR'][$loop] . "! ";
         }
 
         echo "</hl>";
@@ -39,10 +39,12 @@ session_start();
     <form method="post" action="sessionHandler.php" style="font-size: l0pt">
 
         <strong>Username:</strong><br>
-        <input type="text" name="username"><br>
+        <input type="text" name="username">
+        <br>
 
         <strong>Password:</strong><br>
-        <input type="password" name="password"><br>
+        <input type="password" name="password">
+        <br><br>
 
         <input type="submit" value="Login" style="background-color: #F0E86C; color: navy; font-weight: bold">
         <input type="reset" value="Reset"></p>

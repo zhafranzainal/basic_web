@@ -11,12 +11,12 @@ $errflag = false;
 
 // Input validations
 if ($_POST['username'] == '') {
-    $errmsg_arr[] = 'Login ID missing';
+    $errmsg_arr[] = 'Login ID is missing';
     $errflag = true;
 }
 
 if ($_POST['password'] == '') {
-    $errmsg_arr[] = 'Password missing';
+    $errmsg_arr[] = 'Password is missing';
     $errflag = true;
 }
 

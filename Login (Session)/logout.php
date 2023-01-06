@@ -22,9 +22,15 @@ session_destroy();
 </head>
 
 <body>
-    <hl align="center">See you again, bye!</hl>
-    <h4 align="center" class="err">You have been logged out.</h4>
-    <p align="center">Click here to <a href="login.php">Login</a></p>
+    <hl>
+        <center>See you again, bye!</center>
+    </hl>
+    <h4>
+        <center>You have been logged out.</center>
+    </h4>
+    <p>
+        <center>Click here to <a href="login.php">Login</a></center>
+    </p>
 </body>
 
 </html>

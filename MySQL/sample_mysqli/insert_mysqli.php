@@ -72,7 +72,7 @@
                 $mysql = mysqli_connect("localhost", "root", "") or die(mysqli_connect_error());
 
                 // 2. Select the database named "user"
-                mysqli_select_db($mysql, "user") or die(mysqli_error());
+                mysqli_select_db($mysql, "user") or die(mysqli_error($mysql));
 
                 // 3. Write SQL statement that inserts the record into table named "members"
                 $name = $_POST['username'];

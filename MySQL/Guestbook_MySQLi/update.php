@@ -13,13 +13,14 @@ $tarikh = date("d-m-Y", time());
 $masa = date("H:i:s", time());
 
 $query = "UPDATE book SET nama = '$nama', email = '$email', tarikh = '$tarikh', masa = '$masa', komen = '$komen' WHERE id = '$id'";
-
 $result = mysqli_query($mysql, $query) or die("Could not execute query in edit.php");
 
 if ($result) {
-    echo "<script type = 'text/javascript'>
+    echo "<script type='text/javascript'>
     window.location='display.php'
     </script>";
+} else {
+    echo "Error: " . $query . "<br>" . mysqli_error($mysql);
 }
 
 ?>

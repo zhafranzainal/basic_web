@@ -13,8 +13,9 @@ $tarikh = date("d-m-Y", time());
 $masa = date("H:i:s", time());
 
 $query = "INSERT INTO book (nama, email, tarikh, masa, komen) VALUES('$nama','$email','$tarikh','$masa','$komen')";
+$result = mysqli_query($mysql, $query);
 
-if (mysqli_query($mysql, $query)) {
+if ($result) {
     echo "<script type='text/javascript'>
     window.location='display.php'
     </script>";

@@ -16,6 +16,8 @@ if ($result) {
     echo "<script type='text/javascript'>
     window.location='display.php'
     </script>";
+} else {
+    echo "Error: " . $query . "<br>" . mysqli_error($mysql);
 }
 
 ?>

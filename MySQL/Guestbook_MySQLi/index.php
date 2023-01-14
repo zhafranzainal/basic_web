@@ -50,7 +50,7 @@ Homepage of the guestbook system
                     </div>
 
                     <p align="center" class="style1">
-                        [ <a href="create.php">Masuk Data Baru</a> | <a href="display.php">Paparan Data</a> ]
+                        [ <a href="create.html">Masuk Data Baru</a> | <a href="display.php">Paparan Data</a> ]
                     </p>
 
                 </td>

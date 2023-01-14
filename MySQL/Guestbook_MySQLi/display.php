@@ -53,7 +53,7 @@ To display all information of database
 	</ol>
 
 	<div align="center">
-		[ <a href="index.php">Balik ke Halaman Utama</a> | <a href="create.php">Tambah Buku Pelawat</a> ]
+		[ <a href="index.php">Balik ke Halaman Utama</a> | <a href="create.html">Tambah Buku Pelawat</a> ]
 	</div>
 
 </body>

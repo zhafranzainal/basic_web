@@ -54,7 +54,7 @@ $komen = $row['komen'];
     <hr>
 
     <div align="centre">
-        [ <a href="display.php">Balik ke Paparan</a> | <a href="index.php">Balik ke Halaman Utama</a> | <a href="create.php">Tambah Buku Pelawat</a> ]
+        [ <a href="display.php">Balik ke Paparan</a> | <a href="index.php">Balik ke Halaman Utama</a> | <a href="create.html">Tambah Buku Pelawat</a> ]
     </div>
 
 </body>

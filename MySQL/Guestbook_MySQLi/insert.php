@@ -1,6 +1,6 @@
 <!--
 insert.php
-To insert data of create.php into database
+To insert data of create.html into database
 -->
 
 <?php

@@ -1,0 +1,249 @@
+/*
+BCS2243 WEB ENGINEERING [HOT]
+Student ID: CB20033
+Student Name: AHMAD ZHAFRAN FARUQI BIN ZAINAL ABIDIN
+Section: 02B
+Lecturer name: DR. NOORLIN MOHD ALI
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 1px;
+  text-align: center;
+  color: white;
+}
+
+.bannerimg {
+  content: url("../Assets/LogoUMP.png");
+  width: 15%;
+}
+
+.navbar_mid {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar_mid a {
+  float: right;
+  display: block;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.navbar_mid a:hover {
+  background-color: #66CDAA;
+  color: black;
+}
+
+/* Footer */
+.footer {
+  color: white;
+  text-align: right;
+  padding: 20px;
+  background: #66CDAA;
+}
+
+/* Increase the font size of the footer heading */
+.footer h5 {
+  color: white;
+  text-align: right;
+  font-size: 15px;
+}
+
+.navbar_footer {
+  overflow: hidden;
+  background-color: #66CDAA;
+  position: sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links footer*/
+.navbar_footer a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar_footer a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar_footer a:hover {
+  background-color: #66CDAA;
+  color: black;
+}
+
+/* Active/current link */
+.navbar_footer a.active {
+  background-color: #66CDAA;
+  color: white;
+}
+
+/* Create two unequal columns that sits next to each other */
+.main {
+  /* -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  padding: 20px;
+}
+
+/* Style the container */
+.container {
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #ffa500;
+  padding: 10px;
+}
+
+/* Setting row */
+.row {
+  /* display: -ms-flexbox; /* IE10 */
+  /* -ms-flex-wrap: wrap; /* IE10 */
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Floating column for inputs: 75% width */
+.column1 {
+  float: left;
+  width: 20%;
+  margin-top: 1px;
+  padding: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+/* Floating column for inputs: 75% width */
+.column2 {
+  float: right;
+  margin-top: 1px;
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=number],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  color: #060606;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #66CDAA;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the reset button */
+input[type=reset] {
+  background-color: #66CDAA;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+/* Floating column for inputs: 75% width */
+.col-calc {
+  padding: 20px;
+  float: left;
+  width: 50%;
+  color: #66CDAA;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-reset {
+  padding: 20px;
+  float: right;
+  width: 50%;
+  margin-top: 6px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+
+  }
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar_mid a {
+    float: none;
+    width: 100%;
+  }
+}

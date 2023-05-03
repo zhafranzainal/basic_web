@@ -1,0 +1,265 @@
+<!--
+    BCS2243 WEB ENGINEERING [HOT]
+    Student ID: CB20033
+    Student Name: AHMAD ZHAFRAN FARUQI BIN ZAINAL ABIDIN
+    Section: 02B
+    Lecturer name: DR. NOORLIN MOHD ALI
+-->
+
+<!DOCTYPE html>
+
+<head>
+	<title>UMP Merit</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Zhafran">
+	<meta name="description" content="Answer HOT Semester II 2022/2023">
+	<link rel="stylesheet" type="text/css" href="Styles/merit.css">
+	<script src="Functions/merit.js"></script>
+</head>
+
+<body>
+
+	<div class="header">
+		<a href="https://www.ump.edu.my/en">
+			<div class="bannerimg" style="height:150px;"></div>
+		</a>
+	</div>
+
+	<div class="navbar_mid">
+		<a href="Views/aboutMerit.html" target="_blank">ABOUT MERIT</a>
+	</div>
+
+	<div class="row">
+		<div class="main">
+
+			<h2>UMP STUDENT MERIT</h2>
+
+			<p>Merit accumulation for the year 2022</p>
+			<br>
+
+			<form onsubmit="return false">
+
+				<div class="container">
+					<div class="row">
+
+						<div class="column1"><label>A. ACTIVITY-BASED MERIT:</label></div>
+
+						<div class="column2">
+							<table border="1" align="center">
+
+								<tr>
+									<th>ACTIVITY ID AND NAME</th>
+									<th>ACTIVITY LEVEL</th>
+									<th>STUDENT POSITION IN THE ACTIVITY</th>
+									<th>PERFORMANCE SCORE</th>
+								</tr>
+
+								<tr>
+									<td>
+										<select id="activity1" name="activity1" required onchange="showLevel()">
+											<option value="" disabled selected>Select activity</option>
+											<option value="A100">A100/Sukan Kolej 2022</option>
+											<option value="A150">A150/UMP PUBG 2022</option>
+											<option value="A160">A160/Sukan Digital Kampus 2022</option>
+											<option value="A170">A170/E-Sukan 2022</option>
+											<option value="A180">A180/Beach Cleanup 2022</option>
+										</select>
+									</td>
+
+									<td><input type="text" id="activity_level1" readonly></td>
+
+									<td>
+										<select id="activity_position1" name="activity_position1" required
+											onchange="calculateActivityMerit()">
+											<option value="" disabled selected>Select student position</option>
+											<option value="10">Participant</option>
+											<option value="20">Program Committee</option>
+											<option value="30">Main Committee</option>
+										</select>
+									</td>
+
+									<td><input type="text" id="score1" readonly></td>
+								</tr>
+
+								<tr>
+									<td>
+										<select id="activity2" name="activity2" required onchange="showLevel()">
+											<option value="" disabled selected>Select activity</option>
+											<option value="A100">A100/Sukan Kolej 2022</option>
+											<option value="A150">A150/UMP PUBG 2022</option>
+											<option value="A160">A160/Sukan Digital Kampus 2022</option>
+											<option value="A170">A170/E-Sukan 2022</option>
+											<option value="A180">A180/Beach Cleanup 2022</option>
+										</select>
+									</td>
+
+									<td><input type="text" id="activity_level2" readonly></td>
+
+									<td>
+										<select id="activity_position2" name="activity_position2" required
+											onchange="calculateActivityMerit()">
+											<option value="" disabled selected>Select student position</option>
+											<option value="10">Participant</option>
+											<option value="20">Program Committee</option>
+											<option value="30">Main Committee</option>
+										</select>
+									</td>
+
+									<td><input type="text" id="score2" readonly></td>
+								</tr>
+
+								<tr>
+									<td colspan="3" style="text-align:right; font-weight:bold">Total merits:</td>
+									<td><input type="text" id="activity_merit" readonly></td>
+								</tr>
+
+							</table>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row">
+
+						<div class="column1"><label>B. POSITION-BASED MERIT</label></div>
+
+						<div class="column2">
+							<table border="1" align="center">
+
+								<tr>
+									<th>ASSOCIATION/CLUB NAME</th>
+									<th>POSITION HOLD</th>
+									<th>LEVEL OF ASSOCIATION/CLUB</th>
+									<th>PERFORMANCE SCORE</th>
+								</tr>
+
+								<tr>
+
+									<td>
+										<select id="association1" name="association1">
+											<option value="" disabled selected>Select association/club</option>
+											<option value="club1">Kelab Drone UMP</option>
+											<option value="club2">Kelab Memanah</option>
+											<option value="peka1">Perwakilan Kolej Kediaman 1</option>
+											<option value="peka2">Perwakilan Kolej Kediaman 2</option>
+											<option value="mpp">Perwakilan Pelajar UMP</option>
+										</select>
+									</td>
+
+									<td>
+										<select id="club_position1" name="club_position1">
+											<option value="" disabled selected>Select position</option>
+											<option value="10">Member</option>
+											<option value="20">Committee</option>
+											<option value="30">Main Committee</option>
+											<option value="40">College Exco</option>
+											<option value="50">MPP Exco</option>
+										</select>
+									</td>
+
+									<td>
+										<select id="club_level1" name="club_level1" required
+											onchange="calculatePositionMerit()">
+											<option value="" disabled selected>Select association/club level</option>
+											<option value="10">Residential College/Faculty/Club</option>
+											<option value="20">University Level</option>
+											<option value="30">National Level</option>
+											<option value="40">International Level</option>
+										</select>
+									</td>
+
+									<td><input type="text" id="score3" readonly></td>
+
+								</tr>
+
+								<tr>
+
+									<td>
+										<select id="association2" name="association2">
+											<option value="" disabled selected>Select association/club</option>
+											<option value="10">Kelab Drone UMP</option>
+											<option value="20">Kelab Memanah</option>
+											<option value="30">Perwakilan Kolej Kediaman 1</option>
+											<option value="30">Perwakilan Kolej Kediaman 2</option>
+											<option value="30">Perwakilan Pelajar UMP</option>
+										</select>
+									</td>
+
+									<td>
+										<select id="club_position2" name="club_position2">
+											<option value="" disabled selected>Select position</option>
+											<option value="10">Member</option>
+											<option value="20">Committee</option>
+											<option value="30">Main Committee</option>
+											<option value="40">College Exco</option>
+											<option value="50">MPP Exco</option>
+										</select>
+									</td>
+
+									<td>
+										<select id="club_level2" name="club_level2" required
+											onchange="calculatePositionMerit()">
+											<option value="" disabled selected>Select association/club level</option>
+											<option value="10">Residential College/Faculty/Club</option>
+											<option value="20">University Level</option>
+											<option value="30">National Level</option>
+											<option value="40">International Level</option>
+										</select>
+									</td>
+
+									<td><input type="text" id="score4" readonly></td>
+
+								</tr>
+
+								<tr>
+									<td colspan="3" style="text-align:right; font-weight:bold">Total merits:</td>
+									<td><input type="text" id="position_merit" readonly></td>
+								</tr>
+
+							</table>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row">
+
+						<div class="col-calc">
+							<input type="submit" id="submit" value="CALCULATE" onclick="calculateMerit()">
+						</div>
+
+						<div class="col-reset">
+							<input type="reset" value="RESET">
+						</div>
+
+					</div>
+				</div>
+
+			</form>
+
+			<div class="container">
+				<div class="row">
+
+					<div class="column1"><label>C. ACCUMMULATED MERITS:</label></div>
+					<div class="column2"><input type="number" id="total_merit" readonly></div>
+
+					<p id="demo"></p>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="navbar_footer">
+			<b>Copyright &copy 2023 Official Portal - Universiti Malaysia Pahang &#x2022 All rights reserved.</b>
+		</div>
+	</div>
+
+</body>
+
+</html>

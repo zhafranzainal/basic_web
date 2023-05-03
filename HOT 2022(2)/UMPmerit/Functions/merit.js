@@ -71,7 +71,7 @@ function calculateMerit() {
     document.getElementById("total_merit").value = +activity_merit + +position_merit;
     var total_merit = document.getElementById("total_merit").value;
 
-    if (total_merit < 499) {
+    if (total_merit < 500) {
         document.getElementById("demo").innerHTML = (
             "<b>Sorry! You are not eligible for in-campus or DHUAM accommodation for the year 2023</b>"
         );

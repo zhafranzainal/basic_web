@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Company Information Form</title>
+
+    <style>
+        .centered-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            font-family: Arial, sans-serif;
+        }
+
+        label {
+            color: #ba092f;
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            padding: 6px;
+            margin-bottom: 40px;
+        }
+
+        input[type="text"]::placeholder {
+            color: #0081b8;
+        }
+
+        input[type="submit"] {
+            background-color: #02af51;
+            color: white;
+            padding: 15px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="centered-form">
+
+        <form>
+
+            <label for="companyName">Company name:</label>
+            <input type="text" id="companyName" name="companyName" placeholder="Enter name">
+            <br><br>
+
+            <label for="companyAddress">Company address:</label>
+            <input type="text" id="companyAddress" name="companyAddress" placeholder="Enter address">
+            <br><br>
+
+            <label for="contactNumber">Company contact number:</label>
+            <input type="text" id="contactNumber" name="contactNumber" placeholder="Enter contact number">
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

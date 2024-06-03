@@ -73,6 +73,7 @@ a:hover {
 
 .item {
     background-color: gainsboro;
+    margin: 10px;
 }
 
 .portrait {

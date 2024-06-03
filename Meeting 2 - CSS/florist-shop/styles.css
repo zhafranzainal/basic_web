@@ -53,3 +53,7 @@ a {
 a:hover {
     background-color: burlywood;
 }
+
+.jumbotron {
+    margin-top: 5%;
+}

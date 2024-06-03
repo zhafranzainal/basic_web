@@ -1,0 +1,97 @@
+h1,
+h2 {
+    text-align: center;
+    color: rgb(184, 119, 164);
+}
+
+h3,
+p {
+    text-align: center;
+    color: steelblue;
+}
+
+body {
+    background-image: url('assets/bg.jpg');
+    background-size: cover;
+}
+
+/* section {
+    background-image: url('assets/bg.jpg');
+    background-size: cover;
+} */
+
+img {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.main-header {
+    background-image: linear-gradient(rgb(197, 141, 137), rgb(252, 232, 204));
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 48px;
+}
+
+.header-info {
+    text-align: left;
+    color: rgb(219, 84, 75);
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 14px 14px 0 14px;
+}
+
+.header-info a {
+    padding: 0;
+}
+
+.header-info a:hover {
+    background-color: transparent;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    padding: 15px;
+    color: rgb(219, 84, 75);
+    float: left;
+}
+
+a:hover {
+    background-color: burlywood;
+}
+
+.jumbotron {
+    margin-top: 5%;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.item {
+    background-color: gainsboro;
+    margin: 10px;
+    padding: 10px;
+}
+
+.portrait {
+    width: 260px;
+    height: 350px;
+}
+
+.landscape {
+    width: 350px;
+    height: 240px;
+}

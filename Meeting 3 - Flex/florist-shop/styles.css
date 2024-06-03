@@ -1,0 +1,59 @@
+h1,
+p {
+    text-align: center;
+}
+
+img {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.main-header {
+    background-image: linear-gradient(rgb(197, 141, 137), rgb(252, 232, 204));
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 48px;
+}
+
+.header-info {
+    text-align: left;
+    color: rgb(219, 84, 75);
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 14px 14px 0 14px;
+}
+
+.header-info a {
+    text-decoration: none;
+    padding: 0;
+}
+
+.header-info a:hover {
+    background-color: transparent;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    padding: 15px;
+    color: rgb(219, 84, 75);
+    float: left;
+}
+
+a:hover {
+    background-color: burlywood;
+}
+
+.jumbotron {
+    margin-top: 5%;
+}

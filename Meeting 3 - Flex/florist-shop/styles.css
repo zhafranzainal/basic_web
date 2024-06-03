@@ -1,6 +1,9 @@
 h1,
+h2,
+h3,
 p {
     text-align: center;
+    color: rgb(0, 0, 0);
 }
 
 img {
@@ -56,4 +59,22 @@ a:hover {
 
 .jumbotron {
     margin-top: 5%;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.item {}
+
+.portrait {
+    width: 260px;
+    height: 350px;
+}
+
+.landscape {
+    width: 350px;
+    height: 240px;
 }

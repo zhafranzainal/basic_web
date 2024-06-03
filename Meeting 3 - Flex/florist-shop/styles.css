@@ -15,6 +15,11 @@ body {
     background-size: cover;
 }
 
+/* section {
+    background-image: url('assets/bg.jpg');
+    background-size: cover;
+} */
+
 img {
     width: 30%;
     margin-left: auto;

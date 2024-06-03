@@ -1,0 +1,10 @@
+.first {
+    background-color: cornflowerblue;
+}
+
+.second {
+    margin: 30px;
+    background-color: cornflowerblue;
+    border: 2px solid lightgreen;
+    padding: 5px;
+}

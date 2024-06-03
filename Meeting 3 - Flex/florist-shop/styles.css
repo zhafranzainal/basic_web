@@ -1,13 +1,18 @@
 h1,
 h2 {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(184, 119, 164);
 }
 
 h3,
 p {
     text-align: center;
     color: steelblue;
+}
+
+body {
+    background-image: url('assets/bg.jpg');
+    background-size: cover;
 }
 
 img {

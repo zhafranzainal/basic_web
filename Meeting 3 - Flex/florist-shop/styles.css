@@ -1,9 +1,13 @@
 h1,
-h2,
+h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
 h3,
 p {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: steelblue;
 }
 
 img {
@@ -67,7 +71,9 @@ a:hover {
     flex-direction: row;
 }
 
-.item {}
+.item {
+    background-color: gainsboro;
+}
 
 .portrait {
     width: 260px;

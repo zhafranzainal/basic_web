@@ -228,6 +228,7 @@ img.about-us {
 
 footer {
     background-color: rgb(245, 235, 220);
+    background-image: linear-gradient(rgb(252, 232, 204), rgb(197, 141, 137));
 }
 
 .center-footer {

@@ -1,14 +1,14 @@
 h1,
 h2 {
     text-align: center;
-    color: rgb(184, 119, 164);
+    color: brown;
     font-family: 'Playfair Display', sans-serif;
 }
 
 h3,
 p {
     text-align: center;
-    color: steelblue;
+    color: brown;
     font-family: 'Assistant', sans-serif;
 }
 

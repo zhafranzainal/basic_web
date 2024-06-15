@@ -198,3 +198,30 @@ button:hover {
     background-color: rgb(219, 85, 75);
     cursor: pointer;
 }
+
+div.about {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background-color: blanchedalmond;
+    width: 80%;
+}
+
+.about {
+    text-align: left;
+    color: black;
+    padding: 10px;
+    width: 100%;
+}
+
+div.image-about {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+img.about-us {
+    width: 300px;
+}

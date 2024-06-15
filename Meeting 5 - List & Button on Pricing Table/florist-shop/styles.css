@@ -183,3 +183,18 @@ hr {
     border-radius: 50px;
     margin-top: 20px;
 }
+
+button {
+    background-color: rgba(219, 85, 75, 0.616);
+    border-radius: 8px;
+    color: white;
+    padding: 8px;
+    border: none;
+    font-size: 20pt;
+}
+
+button:hover {
+    transform: scale(1.2, 1.2);
+    background-color: rgb(219, 85, 75);
+    cursor: pointer;
+}

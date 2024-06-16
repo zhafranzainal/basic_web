@@ -68,6 +68,25 @@
 
     </script>
 
+    <ul id="language">
+        <li>Javascript</li>
+        <li>Python</li>
+        <li>Kotlin</li>
+    </ul>
+    <script>
+
+        var list = document.getElementById("language");
+
+        var i;
+        for (i = 0; i < list.children.length; i++) {
+            console.log(list.children[i]);
+        }
+
+        list.removeChild(list.childNodes[3]);
+
+    </script>
+
+
 </body>
 
 </html>

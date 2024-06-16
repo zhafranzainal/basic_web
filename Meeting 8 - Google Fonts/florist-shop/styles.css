@@ -94,8 +94,8 @@ a:hover {
 }
 
 .portrait {
-    width: 260px;
-    height: 350px;
+    max-width: 100%;
+    max-height: 350px;
 }
 
 .landscape {

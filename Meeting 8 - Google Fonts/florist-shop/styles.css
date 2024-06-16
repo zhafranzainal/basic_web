@@ -275,3 +275,10 @@ footer {
 * {
     font-family: 'Dancing Script', cursive;
 }
+
+@media (max-width: 600px) {
+    * {
+        font-size: 2vw;
+        margin: 2px;
+    }
+}

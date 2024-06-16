@@ -55,9 +55,15 @@
     <h2 class="red">Hello Programmer</h2>
 
     <script>
+
         document.getElementsByTagName("p")[0].className = "blue";
         document.getElementsByTagName("p")[1].style.color = "green";
         document.getElementsByClassName("apps")[0].setAttribute("class", "blue");
+
+        var paragraph = document.createElement("p");
+        paragraph.innerHTML = "New Paragraph";
+        document.body.appendChild(paragraph).setAttribute("class", "blue");
+
     </script>
 
 </body>

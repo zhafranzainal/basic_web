@@ -271,3 +271,7 @@ footer {
     padding-top: 5px;
     border-top: 1px solid rgb(146, 168, 133);
 }
+
+* {
+    font-family: 'Dancing Script', cursive;
+}

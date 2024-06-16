@@ -3,6 +3,15 @@
 
 <head>
     <title>DOM: Access Element</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: blue;
+        }
+    </style>
 </head>
 
 <body>
@@ -41,6 +50,11 @@
 
         document.getElementsByTagName("p")[1].innerHTML = "Hello Programmer!";
 
+    </script>
+
+    <h2 class="red">Hello Programmer</h2>
+    <script>
+        document.getElementsByTagName("p")[0].className = "blue";
     </script>
 
 </body>

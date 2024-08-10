@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Event Demo</title>
+
+    <style>
+        #div {
+            overflow: scroll;
+            width: 250px;
+            height: 200px;
+        }
+    </style>
+
+    <script>
+
+        // mouse event
+        function rotateGif(element) {
+            element.style.transform = "translate(5px, 5px)";
+            element.style.transform = "rotate(180deg)";
+        }
+
+        // window event
+        function scrolling() {
+            document.getElementById("div").style.color = "blue";
+        }
+
+        // keyboard event
+        function keypress() {
+            var content = document.getElementById("div");
+            content.innerHTML = "You pressed a key!";
+            content.style.color = "red";
+        }
+
+    </script>
+
+</head>
+
+<body onkeydown="keypress()">
+
+    <img src="https://media.giphy.com/media/VTtANKl0beDFQRLDTh/giphy.gif" alt="Code" width="100" height="auto"
+        onmouseover="rotateGif(this)">
+
+    <div id="div" onscroll="scrolling()">
+
+        <h3>How to differentiate HTML, CSS, and Javascript on the website?</h3>
+
+        <p>
+            HTML, CSS, and Javascript can be analogous as human body. HTML is the skeleton of the body, CSS is the
+            clothes or accessories used and Javascript is a nerve cell that allows human to move and interact
+        </p>
+
+    </div>
+
+</body>
+
+</html>

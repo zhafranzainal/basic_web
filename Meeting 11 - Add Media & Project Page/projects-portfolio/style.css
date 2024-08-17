@@ -1,0 +1,43 @@
+.main-content {
+    margin: 10%;
+}
+
+article {
+    max-width: 100%;
+}
+
+.article-title {
+    text-align: center;
+    font-size: 30px;
+    margin: 50px 0 30px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project {
+    margin: 10px 30px;
+    border-bottom: 10px solid #e76f51;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px gainsboro;
+}
+
+.project-title {
+    color: #e76f51;
+    font-weight: bold;
+}
+
+.maps {
+    padding: 10px;
+}
+
+iframe {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 40px gainsboro;
+}

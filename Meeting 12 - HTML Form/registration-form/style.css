@@ -34,3 +34,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.submit-btn {
+    background-color: #2c8c52;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #21663b;
+}

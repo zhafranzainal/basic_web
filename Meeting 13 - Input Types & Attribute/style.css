@@ -44,3 +44,7 @@ body {
 .submit-btn:hover {
     background-color: #21663b;
 }
+
+.check {
+    width: 10%
+}

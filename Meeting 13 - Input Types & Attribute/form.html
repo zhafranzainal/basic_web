@@ -14,6 +14,15 @@
 
         <form action="result.html" target="blank" method="POST" autocomplete="on">
 
+            <label for="competition-category">Categories</label>
+            <select name="competition-category" id="competition-category" autofocus>
+                <option value="kids">Kids (8-10 y)</option>
+                <option value="teens">Teens (11-13 y)</option>
+                <option value="high-school">High School (14-16 y)</option>
+                <option value="adult">Adult (17-21 y)</option>
+            </select>
+            <br>
+
             <input type="text" id="name" name="name" placeholder="Name" required>
 
             <input type="email" id="email" name="email" placeholder="Email" required>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Competition Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="form">
+
+        <h3 class="title">Coding Competition <br> Enrollment 2021</h3>
+
+        <form action="result.html" target="blank" method="POST" autocomplete="on" novalidate>
+
+            <label for="competition-category">Categories</label>
+            <select name="competition-category" id="competition-category">
+                <option value="kids">Kids (8-10 y)</option>
+                <option value="teens">Teens (11-13 y)</option>
+                <option value="high-school">High School (14-16 y)</option>
+                <option value="adult">Adult (17-21 y)</option>
+            </select>
+            <br>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" cols="30" rows="10"></textarea>
+
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone">
+
+            <input type="submit" value="Submit" class="submit-btn">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

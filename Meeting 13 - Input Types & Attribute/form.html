@@ -12,19 +12,25 @@
 
         <h3 class="title">Registration for <br> Coding Competition 2024</h3>
 
-        <form action="result.html" target="blank" method="POST" autocomplete="on" novalidate>
+        <form action="result.html" target="blank" method="POST" autocomplete="on">
 
             <label for="name">Name</label>
             <input type="text" id="name" name="name">
 
             <label for="email">Email</label>
-            <input type="text" id="email" name="email">
+            <input type="email" id="email" name="email">
 
             <label for="address">Address</label>
             <textarea id="address" name="address" cols="30" rows="10"></textarea>
 
             <label for="phone">Phone Number</label>
             <input type="text" id="phone" name="phone">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+
+            <label for="age">Age</label>
+            <input id="age" type="number" name="age" min="8" max="16">
 
             <input type="submit" value="Submit" class="submit-btn">
 

@@ -14,42 +14,42 @@
 
         <form action="result.html" target="blank" method="POST" autocomplete="on">
 
-            <input type="text" id="name" name="name" placeholder="Name">
+            <input type="text" id="name" name="name" placeholder="Name" required>
 
-            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="email" id="email" name="email" placeholder="Email" required>
 
-            <textarea id="address" name="address" cols="30" rows="10" placeholder="Address"></textarea>
+            <textarea id="address" name="address" cols="30" rows="10" placeholder="Address" required></textarea>
 
-            <input type="text" id="phone" name="phone" placeholder="Phone Number">
+            <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
 
-            <input type="password" id="password" name="password" placeholder="Password">
+            <input type="password" id="password" name="password" placeholder="Password" required>
 
-            <input id="age" type="number" name="age" min="8" max="16" placeholder="Age">
+            <input id="age" type="number" name="age" min="8" max="16" placeholder="Age" required>
 
             <label for="birth-date">Birth Date</label>
-            <input id="birth-date" type="date" name="birth-date">
+            <input id="birth-date" type="date" name="birth-date" required>
 
             <label for="gender">Gender</label><br>
 
-            <input class="check" id="male" type="radio" name="gender" value="male">
+            <input class="check" id="male" type="radio" name="gender" value="male" required>
             <label for="male">Male</label><br>
 
-            <input class="check" id="female" type="radio" name="gender" value="female">
+            <input class="check" id="female" type="radio" name="gender" value="female" required>
             <label for="female">Female</label><br>
 
             <label for="documents">Documents</label><br>
 
-            <input class="check" id="student-card" type="checkbox" name="student-card" value="student-card">
+            <input class="check" id="student-card" type="checkbox" name="student-card" value="student-card" required>
             <label for="student-card">Student Card</label><br>
 
-            <input class="check" id="biodata" type="checkbox" name="biodata" value="biodata">
+            <input class="check" id="biodata" type="checkbox" name="biodata" value="biodata" required>
             <label for="biodata">Biodata</label><br>
 
-            <input class="check" id="contract-form" type="checkbox" name="contract-form" value="contract-form">
+            <input class="check" id="contract-form" type="checkbox" name="contract-form" value="contract-form" required>
             <label for="contract-form">Contract Form</label><br>
 
             <label for="attached-file">Upload File</label><br>
-            <input id="attached-file" type="file" name="attached-file">
+            <input id="attached-file" type="file" name="attached-file" required>
 
             <input type="submit" value="Submit" class="submit-btn">
 

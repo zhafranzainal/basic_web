@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mobile Legend Team Member Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            margin-bottom: 15px;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Mobile Legend Team Member Registration</h2>
+
+        <form action="submit.html" method="POST">
+
+            <!-- Team Member Name -->
+            <label for="name">Team Member Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter full name" required autofocus>
+
+            <!-- Email Address -->
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Mobile Number -->
+            <label for="phone">Mobile Number</label>
+            <input type="number" id="phone" name="phone" placeholder="Enter your mobile number" required>
+
+            <!-- Player Role -->
+            <label>Player Role</label>
+            <div class="radio-group">
+                <input type="radio" id="tank" name="role" value="tank" required>
+                <label for="tank">Tank</label>
+
+                <input type="radio" id="mage" name="role" value="mage" required>
+                <label for="mage">Mage</label>
+
+                <input type="radio" id="marksman" name="role" value="marksman" required>
+                <label for="marksman">Marksman</label>
+
+                <input type="radio" id="support" name="role" value="support" required>
+                <label for="support">Support</label>
+            </div>
+
+            <!-- Team Preferences -->
+            <label>Team Preferences</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="daily-training" name="preference" value="daily-training">
+                <label for="daily-training">Daily Training</label>
+
+                <input type="checkbox" id="tournament" name="preference" value="tournament">
+                <label for="tournament">Tournaments</label>
+
+                <input type="checkbox" id="scrims" name="preference" value="scrims">
+                <label for="scrims">Scrims</label>
+            </div>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register">
+
+        </form>
+    </div>
+
+</body>
+
+</html>

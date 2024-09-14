@@ -5,3 +5,23 @@ a:link {
 a:visited {
     color: red;
 }
+
+input[type=number]:placeholder-shown {
+    background-color: bizque;
+}
+
+input:enabled {
+    background-color: white;
+}
+
+input:disabled {
+    background-color: coral;
+}
+
+* {
+    color: black;
+}
+
+:not(label) {
+    color: brown;
+}

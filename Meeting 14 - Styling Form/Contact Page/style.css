@@ -1,0 +1,115 @@
+.contact-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.illustration-img {
+    margin: 0px;
+    width: 800px;
+}
+
+.contact {
+    display: inline-block;
+    margin: 10px 30px;
+    text-align: center;
+}
+
+.profile-contact-img {
+    width: 200px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.icon {
+    margin-right: 6px;
+}
+
+.fa-user,
+.fa-map-marker-alt,
+.fa-envelope-open,
+.fa-comment {
+    font-size: 27px;
+}
+
+.form-label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.form-input {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    outline: none;
+    height: 48px;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.input-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-style: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    height: 100%;
+}
+
+.textarea-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-textarea {
+    position: relative;
+}
+
+.textarea {
+    border-style: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    margin-top: 10px;
+}
+
+.submit {
+    border-style: none;
+    border-radius: 25px;
+    color: aliceblue;
+    background-color: rgb(38, 70, 83);
+    margin: 5px;
+    cursor: pointer;
+}
+
+.input-item:focus+.form-label {
+    top: -5px;
+    left: -2px;
+    font-size: 10px;
+}
+
+.textarea:focus+.form-label {
+    top: -5px;
+    left: -2px;
+    font-size: 10px;
+}
+
+.input-item:not(:placeholder-shown).input-item:not(:focus)+.form-label {
+    top: -2px;
+    left: -2px;
+    font-size: 10px;
+    color: rgb(138, 130, 130);
+}

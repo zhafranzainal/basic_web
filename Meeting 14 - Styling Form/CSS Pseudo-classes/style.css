@@ -25,3 +25,15 @@ input:disabled {
 :not(label) {
     color: brown;
 }
+
+label:hover {
+    background-color: lightgray;
+}
+
+input[type=submit]:active {
+    background-color: lightblue;
+}
+
+input:focus {
+    background-color: lightyellow;
+}

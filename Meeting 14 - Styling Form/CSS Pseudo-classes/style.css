@@ -7,7 +7,7 @@ a:visited {
 }
 
 input[type=number]:placeholder-shown {
-    background-color: bizque;
+    background-color: bisque;
 }
 
 input:enabled {

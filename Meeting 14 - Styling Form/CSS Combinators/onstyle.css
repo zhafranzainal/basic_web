@@ -1,0 +1,14 @@
+/* general sibling selector (select all elements that are next siblings of a specified element) */
+h3~p {
+    color: blue;
+}
+
+/* adjacent sibling selector (select an element that is directly after another specific element) */
+h1+p {
+    color: green;
+}
+
+/* child selector (select all elements that are the children of a specified element) */
+div>p {
+    color: red;
+}

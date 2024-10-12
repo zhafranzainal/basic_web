@@ -94,6 +94,7 @@ button:hover {
     position: absolute;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    clip-path: circle(0% at 0 50%);
 }
 
 .slide img {
@@ -141,4 +142,14 @@ button:hover {
 
 .active {
     opacity: 1;
+}
+
+.slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+
+.slider-btn.active {
+    background-color: rgb(38, 70, 83);
 }

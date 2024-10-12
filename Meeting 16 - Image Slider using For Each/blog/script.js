@@ -33,3 +33,41 @@ buttons.forEach(function (btn, i) {
         currentSlide = i;
     });
 })
+
+var repeat = function (activeClass) {
+
+    let active = document.getElementsByClassName("active");
+    let i = 1;
+
+    var repeater = function () {
+
+        setTimeout(function () {
+
+            [...active].forEach(function (activeSlide) {
+                activeSlide.classList.remove("active");
+            });
+
+            slides[i].classList.add("active");
+            buttons[i].classList.add("active");
+            i++;
+
+            // if reach the last image 
+            if (slides.length == i) {
+                i = 0;
+            }
+
+            if (i >= slides.length) {
+                return;
+            }
+
+            repeater();
+
+        }, 5000);
+
+    }
+
+    repeater();
+
+}
+
+repeat();

@@ -12,7 +12,7 @@ var slides = document.querySelectorAll(".slide");
 var buttons = document.querySelectorAll(".slider-btn");
 let currentSlide = 1;
 
-//Manual images slider
+// Manual images slider
 var manualNav = function (index) {
 
     slides.forEach(function (slide) {

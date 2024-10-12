@@ -75,3 +75,70 @@ button:hover {
     cursor: pointer;
     transform: translateY(5px);
 }
+
+.section-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.image-slider {
+    position: relative;
+    width: 640px;
+    height: 426px;
+}
+
+.slide {
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    background-color: rgba(220, 220, 220, 0.609);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.slide-text h2 {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.slide-text p {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation {
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-btn {
+    background-color: rgb(151, 151, 151);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.active {
+    opacity: 1;
+}

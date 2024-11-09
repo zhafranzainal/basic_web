@@ -1,0 +1,155 @@
+.header-icon {
+    width: 40px;
+    margin: 8px 15px;
+    position: absolute;
+}
+
+main {
+    margin-top: 60px;
+}
+
+#jumbotron {
+    width: 100%;
+}
+
+.jumbotron {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(38, 70, 83);
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.jumbotron-title {
+    color: rgb(224, 251, 252);
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.jumbotron-text {
+    color: rgb(224, 251, 252);
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 8px solid rgb(244, 162, 97);
+}
+
+.jumbotron-img {
+    height: 300px;
+}
+
+.mini-text-flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mini-text {
+    color: rgb(224, 251, 252);
+    text-align: left;
+    margin-right: 5px;
+}
+
+.fa-hand-point-up {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.icon-down {
+    display: none;
+}
+
+.fa-hand-point-down {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+button {
+    background-color: rgb(38, 70, 83);
+    border-style: none;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(5px);
+}
+
+.section-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.image-slider {
+    position: relative;
+    width: 640px;
+    height: 426px;
+}
+
+.slide {
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    clip-path: circle(0% at 0 50%);
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    background-color: rgba(220, 220, 220, 0.609);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.slide-text h2 {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.slide-text p {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation {
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-btn {
+    background-color: rgb(151, 151, 151);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.active {
+    opacity: 1;
+}
+
+.slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+
+.slider-btn.active {
+    background-color: rgb(38, 70, 83);
+}

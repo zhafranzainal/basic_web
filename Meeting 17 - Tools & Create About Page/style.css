@@ -87,6 +87,7 @@ button:hover {
     position: relative;
     width: 640px;
     height: 426px;
+    z-index: 10;
 }
 
 .slide {
@@ -157,11 +158,11 @@ button:hover {
 .wave1 {
     position: absolute;
     top: 310px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .wave2 {
     position: absolute;
     top: 350px;
-    z-index: 2;
+    z-index: 3;
 }

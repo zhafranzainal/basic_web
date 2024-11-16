@@ -1,0 +1,15 @@
+.container {
+    width: 80%;
+    margin-bottom: 10px;
+    background-color: #63b686;
+}
+
+.aircraft {
+    width: 50px;
+    transition: 3s;
+}
+
+.container:hover .aircraft {
+    width: 60px;
+    margin-left: 200px;
+}

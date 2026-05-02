@@ -71,3 +71,5 @@ var repeat = function (activeClass) {
 }
 
 repeat();
+
+AOS.init();
